@@ -13,20 +13,26 @@ function sortYearAscendingly(cars) {
 }
 
 function sortCarByYearAscendingly(cars) {
-  // Sangat dianjurkan untuk console.log semua hal hehe
-  console.log("Sebelum dilakukan sorting ascendingly")
-  console.log(cars);
+  try {
+    // Sangat dianjurkan untuk console.log semua hal hehe
+    console.log("Sebelum dilakukan sorting ascendingly")
+    console.log(cars);
 
-  // Clone array untuk menghindari side-effect
-  // Apa itu side effect?
-  const result = [...cars];
+    // Clone array untuk menghindari side-effect
+    // Apa itu side effect?
+    const result = [...cars];
 
-  // Tulis code-mu disini
-  sortYearAscendingly(result)
+    // Tulis code-mu disini
+    sortYearAscendingly(result)
 
-  console.log("Setelah dilakukan sorting ascendingly")
-  console.log(result)
+    console.log("Setelah dilakukan sorting ascendingly")
+    console.log(result)
 
-  // Rubah code ini dengan array hasil sorting secara ascending
-  return result;
+    // Rubah code ini dengan array hasil sorting secara ascending
+    return result;
+
+  } catch (error) {
+    console.log(error.message)
+
+  }
 }
