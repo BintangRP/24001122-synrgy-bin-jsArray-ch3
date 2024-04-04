@@ -1,34 +1,52 @@
 <!DOCTYPE html>
-<meta charset="utf-8" />
-<title>Test Suite</title>
-<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.18.0.css" />
-<body>
-  <div id="qunit"></div>
-  <div id="qunit-fixture"></div>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- DON'T TOUCH -->
-  <script src="https://code.jquery.com/qunit/qunit-2.18.0.js"></script>
+		<!-- <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.18.0.css" /> -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/qunit@2.20.1/qunit/qunit.min.css" />
 
-  <!-- Sort Function: Javascript Source Code -->
-  <script src="./scripts/filterCarByAvailability.js"></script>
-  <script src="./scripts/sortCarByYearAscendingly.js"></script>
-  <script src="./scripts/sortCarByYearDecendingly.js"></script>
+		<title>Test Suite</title>
+	</head>
+	<body>
+		<div id="qunit"></div>
+		<div id="qunit-fixture"></div>
 
-  <!-- DON'T TOUCH -->
-  <script
-    src="https://fnurhidayat.github.io/javascript-array-challenge/scripts/getCars.js"
-    crossorigin
-  ></script>
-  <script
-    src="https://fnurhidayat.github.io/javascript-array-challenge/scripts/filterCarByAvailability.test.js"
-    crossorigin
-  ></script>
-  <script
-    src="https://fnurhidayat.github.io/javascript-array-challenge/scripts/sortCarByYearAscendingly.test.js"
-    crossorigin
-  ></script>
-  <script
-    src="https://fnurhidayat.github.io/javascript-array-challenge/scripts/sortCarByYearDecendingly.test.js"
-    crossorigin
-  ></script>
-</body>
+		<!-- DON'T TOUCH -->
+		<!-- <script src="https://code.jquery.com/qunit/qunit-2.18.0.js"></script> -->
+		<script src="https://cdn.jsdelivr.net/npm/qunit@2.20.1/qunit/qunit.min.js"></script>
+
+		<!-- Sort Function: Javascript Source Code -->
+		<script src="./scripts/filterCarByAvailability.js"></script>
+		<script src="./scripts/sortCarByYearAscendingly.js"></script>
+		<script src="./scripts/sortCarByYearDecendingly.js"></script>
+
+		<!-- DON'T TOUCH -->
+		<script src="https://fnurhidayat.github.io/javascript-array-challenge/scripts/getCars.js" crossorigin></script>
+		<script
+			src="https://fnurhidayat.github.io/javascript-array-challenge/scripts/filterCarByAvailability.test.js"
+			crossorigin
+		></script>
+		<script
+			src="https://fnurhidayat.github.io/javascript-array-challenge/scripts/sortCarByYearAscendingly.test.js"
+			crossorigin
+		></script>
+		<script
+			src="https://fnurhidayat.github.io/javascript-array-challenge/scripts/sortCarByYearDecendingly.test.js"
+			crossorigin
+		></script>
+		<script>
+			console.warn = function (message) {
+				if (
+					message.includes(
+						"Returning a promise from a module callback is not supported. Instead, use hooks for async behavior. This will become an error in QUnit 3.0."
+					)
+				) {
+					return;
+				}
+			};
+		</script>
+	</body>
+</html>
