@@ -15,8 +15,8 @@ function sortYearAscendingly(cars) {
 function sortCarByYearAscendingly(cars) {
   try {
     // Sangat dianjurkan untuk console.log semua hal hehe
-    console.log("Sebelum dilakukan sorting ascendingly")
-    console.log(cars);
+    console.log("Sebelum dilakukan sorting ascendingly", cars)
+    // console.log(cars);
 
     // Clone array untuk menghindari side-effect
     // Apa itu side effect?
@@ -25,8 +25,8 @@ function sortCarByYearAscendingly(cars) {
     // Tulis code-mu disini
     sortYearAscendingly(result)
 
-    console.log("Setelah dilakukan sorting ascendingly")
-    console.log(result)
+    console.log("Setelah dilakukan sorting ascendingly", result)
+    // console.log(result)
 
     // Rubah code ini dengan array hasil sorting secara ascending
     return result;

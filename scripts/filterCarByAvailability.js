@@ -10,12 +10,13 @@ function filterCarByAvailability(cars) {
     console.log(cars.length)
     let items = [...cars]
 
-    for (var i = 0; i < cars.length; i++) {
+    for (var i = 0; i < items.length; i++) {
 
-      if (items[i].available === true) {
+      if (items[i].available) {
         result.push(items[i])
       }
     }
+    // cars.map((car) => cars.available && result.push(car))
     console.log(result)
 
     // Rubah code ini dengan array hasil filter berdasarkan availablity
